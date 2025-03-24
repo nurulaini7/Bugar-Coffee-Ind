@@ -269,7 +269,7 @@
               <i data-feather="star"></i>
             </div>
             <div class="product-price">IDR 30K</div>
-            <a href="#" class="add-to-cart-button"> <i data-feather="shopping-cart"></i> <span>Add to Cart</span> </a>
+            <a href="#" class="add-to-cart-button" @click.prevent="$store.cart.add({id: 1, name: 'Product 1', price: 30000, img: '1.jpg'})"> <i data-feather="shopping-cart"></i> <span>Add to Cart</span> </a>
           </div>
         </div>
       </div>

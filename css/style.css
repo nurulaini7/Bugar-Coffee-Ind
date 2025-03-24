@@ -675,12 +675,14 @@ footer .credit a {
   position: relative;
   background-color: #fefefe;
   color: var(--bg);
-  margin: 15% auto;
+  margin: 10% auto; /* Adjusted margin */
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
   max-width: 600px;
   animation: animateModal 0.5s;
+  top: 45%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
 }
 
 .modal-content {
@@ -789,6 +791,7 @@ footer .credit a {
   top: 10px;
   right: 10px;
   cursor: pointer;
+  color: var(--bg); /* Ensure the close icon is visible */
 }
 
 /* Media Queries */
