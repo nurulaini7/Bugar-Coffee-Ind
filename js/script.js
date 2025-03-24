@@ -42,8 +42,6 @@ document.addEventListener('click', function (e) {
 });
 
 // Modal Box
-
-// Modal Box - Ganti kode ini
 const itemDetailModal = document.querySelector('#item-detail-modal');
 
 // Gunakan event delegation untuk menangani klik pada tombol yang dirender dinamis
@@ -54,12 +52,13 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// Kode close modal tetap sama
+// Kode close modal
 document.querySelector('.modal .close-icon').onclick = (e) => {
   itemDetailModal.style.display = 'none';
   e.preventDefault();
 };
 
+// Klik di luar modal untuk menutup
 window.onclick = (e) => {
   if (e.target === itemDetailModal) {
     itemDetailModal.style.display = 'none';
