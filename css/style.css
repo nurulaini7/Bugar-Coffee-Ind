@@ -896,12 +896,4 @@ footer .credit a {
   html {
     font-size: 55%;
   }
-
-  .modal-container {
-    width: 90%;
-    padding: 1rem;
-    margin: 25% auto; /* Increase margin to avoid header and footer */
-    top: 25%; /* Adjust top position */
-    transform: translateY(-25%); /* Adjust vertical centering */
-  }
 }

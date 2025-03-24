@@ -56,7 +56,7 @@
       <div class="shopping-cart">
         <template x-for="(item, index) in $store.cart.items" x-keys="index">
           <div class="cart-item">
-            <img :src="`/img/products/${item.img}`" :alt="item.name" />
+            <img :src="`/img/menu/products/${item.img}`" :alt="item.name" />
             <div class="item-detail">
               <h3 x-text="item.name"></h3>
               <div class="item-price">
@@ -167,7 +167,7 @@
         <template x-for="(item, index) in items" x-key="index">
           <div class="product-card">
             <div class="product-image">
-              <img :src="`/img/products/${item.img}`" :alt="item.name" />
+              <img :src="`/img/menu/products/${item.img}`" :alt="item.name" />
             </div>
             <div class="product-content">
               <h3 x-text="item.name"></h3>
@@ -257,7 +257,7 @@
       <div class="modal-container">
         <a href="#" class="close-icon" @click="closeModal()"><i data-feather="x"></i></a>
         <div class="modal-content">
-          <img src="img/products/1.jpg" alt="Product 1" />
+          <img src="img/menu/products/1.jpg" alt="Product 1" />
           <div class="product-content">
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, tenetur cupiditate facilis obcaecati ullam maiores minima quos perspiciatis similique itaque, esse rerum eius repellendus voluptatibus!</p>
