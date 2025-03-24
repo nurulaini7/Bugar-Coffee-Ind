@@ -1,12 +1,12 @@
 document.addEventListener('alpine:init', () => {
         Alpine.data('products', () => ({
-           items: [
-            {id: 1, name: 'Robusta sidikalang', img: '1.jpg' , price: 20000},
-            {id: 2, name: 'Arabica Gayo', img: '2.jpg' , price: 25000},
-            {id: 3, name: 'Wine', img: '3.jpg' , price: 30000},
-            {id: 4, name: 'Blend Robusta  sidikalang', img: '4.jpg' , price: 35000},
-            {id: 5, name: 'Robusta Gayo', img: '5.jpg' , price: 20000},
-           ],
+         items: [
+                { id: 1, name: 'Robusta Sidikalang', img: 'img/menu/products/1.jpg', price: 20000 },
+                { id: 2, name: 'Arabica Gayo', img: 'img/menu/products/2.jpg', price: 25000 },
+                { id: 3, name: 'Wine', img: 'img/menu/products/3.jpg', price: 30000 },
+                { id: 4, name: 'Blend Robusta Sidikalang', img: 'img/menu/products/4.jpg', price: 35000 },
+                { id: 5, name: 'Robusta Gayo', img: 'img/menu/products/5.jpg', price: 20000 },
+              ],
         }));
 
         Alpine.store('cart',{

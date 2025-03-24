@@ -56,7 +56,7 @@
       <div class="shopping-cart">
         <template x-for="(item, index) in $store.cart.items" x-keys="index">
           <div class="cart-item">
-            <img :src="`/img/menu/products/${item.img}`" :alt="item.name" />
+            <img :src="`/${item.img}`" :alt="item.name" />
             <div class="item-detail">
               <h3 x-text="item.name"></h3>
               <div class="item-price">
@@ -167,7 +167,7 @@
         <template x-for="(item, index) in items" x-key="index">
           <div class="product-card">
             <div class="product-image">
-              <img :src="`/img/menu/products/${item.img}`" :alt="item.name" />
+              <img :src="`/${item.img}`" :alt="item.name" />
             </div>
             <div class="product-content">
               <h3 x-text="item.name"></h3>
